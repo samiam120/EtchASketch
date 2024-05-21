@@ -1,5 +1,10 @@
 let container = document.querySelector(".container");
 let btn = document.querySelector("button");
+let resetBtn = document.querySelector("#reset");
+
+resetBtn.addEventListener("click", () =>{
+    container.innerHTML = '';
+});
 
 btn.addEventListener("click", () => {
   let dimensions = prompt("how many squares per side would you like?");
